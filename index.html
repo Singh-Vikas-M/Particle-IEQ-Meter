@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>IEQ Meter</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <h1>IEQ METER</h1>
+      <p>Hit Refresh Button to see live data . . .</p>
+
+      <div class="data-card-container">
+        <div class="card">
+          <label for="Temperature">Temperature</label>
+          <p id="temp-data">0</p>
+        </div>
+        <div class="card">
+          <label for="Humidity">Humidity</label>
+          <p id="humi-data">0</p>
+        </div>
+        <div class="card">
+          <label for="HeatIndex">HeatIndex</label>
+          <p id="heatindex-data">0</p>
+        </div>
+      </div>
+
+      <button onclick="getData()">
+        Refresh
+      </button>
+    </div>
+
+    <footer>
+      <p>
+        An "Open Source" Project <br />
+        Find Source Code <br />
+        <a
+          href="https://github.com/Singh-Vikas-M/Particle-IEQ-Meter"
+          target="_blank"
+          >HERE</a
+        >
+      </p>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>
